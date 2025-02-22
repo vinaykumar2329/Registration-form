@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+        <form id="form" action="https://api.web3forms.com/submit" method="POST">
+          <input type="hidden" name="access_key" value="87ec76cc-3a97-4ad8-8516-11ce2453d386">
+
+
+       <h1 style="text-align: center; text-decoration: underline;">REGISTRATION FORM</h1>
+        <div class="boxcontainer">
+          <div class="box1">
+            <label for="name">Name</label>
+            <input
+              id="name"
+              type="text"
+              placeholder="ENTER YOUR FULLNAME"
+              name="Name"
+              required
+            />
+
+            <label for="email">Email</label>
+            <input
+              id="email"
+              type="email"
+              placeholder="ENTER YOUR EMAIL"
+              name="Email"
+              required
+            />
+
+            <label for="phone">Mobile No</label>
+            <input
+              id="phone"
+              type="text"
+              placeholder="ENTER YOUR NUMBER"
+              name="phonenumber"
+              required
+            />
+
+            <label for="gender">Gender</label>
+            <select id="gender">
+              <option value="Male">Male</option>
+              <option value="Female">Female</option>
+              <option value="Other">Other</option>
+            </select>
+
+            <label for="Dob">Date of Birth</label>
+            <input id="Dob" type="date" name="DOB" required />
+
+            <label for="address">Address</label>
+            <input
+              name="address"
+              id="address"
+              type="text"
+              placeholder="ENTER YOUR ADDRESS"
+              name="Address"
+              required
+            />
+
+            <label for="city">City</label>
+            <select name="city" id="city" required>
+              <option value="">Select City</option>
+              <option value="Chandigarh">Chandigarh</option>
+              <option value="Lucknow">Lucknow</option>
+              <option value="Hyderabab">Hyderabab</option>
+            </select>
+
+            <label for="state">State</label>
+            <select name="state" id="state" required>
+              <option value="">Select State</option>
+              <option value="Punjab">Punjab</option>
+              <option value="Uttar Pradesh">Uttar Pradesh</option>
+              <option value="Delhi">Delhi</option>
+            </select>
+          </div>
+          <div class="box2">
+            <label for="country">Country</label>
+            <select name="country" id="country" required>
+              <option value="">Select Country</option>
+              <option value="India">India</option>
+              <option value="Srilanka">Srilanka</option>
+              <option value="Australia">Australia</option>
+            </select>
+            <label for="zipcode">Zipcode</label>
+            <input
+              id="zipcode"
+              type="text"
+              placeholder="ENTER YOUR ZIPCODE"
+              name="Zipcode"
+              required
+            />
+
+            <label for="experience">Experience Level</label>
+            <select name="experience" id="experience" required>
+              <option value="">Select Experience</option>
+              <option value="Fresher">Fresher</option>
+              <option value="1-3 Years">1-3 Years</option>
+              <option value="3-5 Years">3-5 Years</option>
+              <option value="5+ Years">5+ Years</option>
+            </select>
+
+            <label >Specialization :</label>
+            <div >
+              <input type="radio" id="politics" value="Politics" name="Specialization" required />
+              <label for="politics">Politics</label>
+            </div>
+            <div>
+              <input type="radio" id="sports" value="Sports" name="Specialization" />
+              <label for="sports">Sports</label>
+            </div>
+            <div>
+              <input type="radio" id="entertainment" value="Entertainment" name="Specialization" />
+              <label for="entertainment">Entertainment</label>
+            </div>
+
+            <div>
+              <input type="radio" id="technology" value="Technology" name="Specialization" />
+              <label for="technology">Technology</label>
+            </div>
+
+            <div>
+              <input type="radio" id="bussiness" value="Bussiness" name="Specialization" />
+              <label for="bussiness">Bussiness</label>
+            </div>
+
+            <div>
+              <input type="radio" id="other" value="Other" name="Specialization" />
+              <label for="other">Other</label>
+            </div>
+
+            <label for="idproof">Upload ID Proof</label>
+            <input type="file" id="idproof" name="filename" required />
+
+            <label for="language">Preferred Language</label>
+            <select name="language" id="language" required>
+              <option value="">Select Language</option>
+              <option value="English">English</option>
+              <option value="Hindi">Hindi</option>
+              <option value="Other">Other</option>
+            </select>
+          </div>
+        </div>
+        <div class="formbottom">
+          <div class="bottom1">
+            <input type="checkbox" id="T&C" required />
+            <label for="T&C">I agree to the terms and condition</label>
+          </div>
+          <div class="bottom2">
+            <input type="submit" value="Register Now" ></button>
+          </div>
+        </div>
+      </form>
+  </body>
+  <script src="script.js"></script>
+</html>

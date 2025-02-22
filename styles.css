@@ -1,0 +1,133 @@
+
+label {
+  font:
+    1rem 'Fira Sans',
+    sans-serif;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+    /* background-color: aqua; */
+    width: 29vw;
+    gap: 5.5px;
+}
+.box2{
+    display: flex;
+    flex-direction: column;
+    /* background-color: blue; */
+    width: 29vw;
+    gap: 5px;
+    flex-grow: 1;
+    flex-basis: 200;
+}
+form {
+    background-color: aliceblue;
+    /* color:whitesmoke; */
+    color: black;
+    box-shadow: 0 0 10px whitesmoke;  
+    padding: 10px;
+    
+}
+ form .boxcontainer{
+    display: flex;
+    width: 60vw;
+    flex-wrap: wrap;
+    padding: 10px;
+    flex-direction: row;
+    gap: 2vw ;
+}
+input{
+    color: black;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(250, 244, 244);
+    margin: 0%;
+    outline: none;
+}
+select{
+    color: black;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgb(250, 244, 244);
+    margin: 0%;
+    outline: none;
+}
+.formbottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+.bottom2 input{
+    padding: 10px;
+    background-color: rgb(14, 218, 14);
+    width: 20vw;
+    color: whitesmoke;
+    font-size: 18px;
+    border: none;
+}
+body{
+    background: linear-gradient(45deg,orange,wheat,green);
+    background-size: 200% 200%;
+    animation: colorchange 20s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@keyframes colorchange{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+
+
+@media screen and (max-width: 768px){
+    body{
+        background:none;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    H1{
+        text-decoration: underline;
+    }
+    form{
+        padding: 5px;
+    background-color: white;
+    color:black;
+    }
+    form .boxcontainer{
+        display: flex;
+        width: 90vw;
+        flex-direction:column;
+
+    }
+    .box1{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+    .box2{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+    }
+    .bottom2 input{
+        background-color: rgb(14, 218, 14);
+        width: 30vw;
+        color: whitesmoke;
+        font-size: 16px;
+        border: none;
+    }
+
+}
